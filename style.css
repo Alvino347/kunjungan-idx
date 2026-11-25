@@ -715,3 +715,34 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+
+.video-section {
+    background: #080d13;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 45px auto 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 229, 160, 0.25);
+    border-radius: 16px;
+    background: #101923;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #000;
+}
+
+@media (max-width: 650px) {
+    .video-container {
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+}
